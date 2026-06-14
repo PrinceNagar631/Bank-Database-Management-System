@@ -1,0 +1,192 @@
+# Bank Database Management System
+
+A full-stack **Bank Database Management System (Bank DBMS)** built using **React**, **FastAPI**, and **MySQL**. The project provides secure banking operations including authentication, account management, deposits, withdrawals, fund transfers, transaction history, beneficiary management, and loan applications.
+
+## Tech Stack
+
+### Frontend
+- React
+- React Router
+- Axios
+- CSS
+
+### Backend
+- FastAPI
+- SQLAlchemy
+- JWT Authentication
+- Pydantic
+
+### Database
+- MySQL
+
+## Features
+
+- User Registration
+- Secure JWT Login
+- Dashboard
+- Account Management
+- Deposit Money
+- Withdraw Money
+- Transfer Money
+- Transaction History
+- Beneficiary Management
+- Loan Application
+- View Loan Status
+- Protected Routes
+- REST API Architecture
+
+## Project Structure
+
+```
+Bank DB Project/
+│
+├── Backend/
+│   ├── app/
+│   ├── requirements.txt
+│   └── README.md
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── MySQL/
+│   ├── 1st part.sql
+│   ├── 2nd part.sql
+│   ├── 3rd part.sql
+│   └── 4th.sql
+│
+└── README.md
+```
+
+## Prerequisites
+
+Make sure the following are installed:
+
+- Python 3.10+
+- Node.js 18+
+- npm
+- MySQL Server
+- Git
+
+## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/PrinceNagar631/Bank-Database-Management-System.git
+cd "Bank DB Project"
+```
+
+### 2. Set up the MySQL database
+
+1. Start your MySQL server.
+2. Create a new database (if required).
+3. Execute the SQL files inside the `MySQL` folder in order:
+
+```
+1st part.sql
+2nd part.sql
+3rd part.sql
+4th.sql
+```
+
+This creates the required schema, tables, procedures, and sample data.
+
+### 3. Configure the backend
+
+Navigate to the backend directory:
+
+```bash
+cd Backend
+```
+
+Create and activate a virtual environment (recommended):
+
+**Windows**
+
+```bash
+python -m venv Backendven
+Backendven\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Update the database configuration in the backend (for example, in `app/core/config.py` or your environment configuration) with your MySQL credentials.
+
+Start the FastAPI server:
+
+```bash
+cd app
+uvicorn main:app --reload
+```
+
+The backend will run at:
+
+```
+http://127.0.0.1:8000
+```
+
+Swagger documentation will be available at:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+### 4. Configure the frontend
+
+Open a new terminal:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the React development server:
+
+```bash
+npm start
+```
+
+The frontend will run at:
+
+```
+http://localhost:3000
+```
+
+## Running the Application
+
+1. Start the MySQL server.
+2. Start the FastAPI backend (`uvicorn main:app --reload`).
+3. Start the React frontend (`npm start`).
+4. Open `http://localhost:3000` in your browser.
+5. Register a new account or log in with existing credentials.
+
+## API Base URL
+
+```
+http://127.0.0.1:8000
+```
+
+## Future Enhancements
+
+- Admin Dashboard
+- Loan Approval Workflow
+- OTP Verification
+- Enhanced Fraud Detection
+- Analytics Dashboard
+- Email Notifications
+
+## License
+
+This project was developed for educational and learning purposes.
