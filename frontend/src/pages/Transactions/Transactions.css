@@ -1,0 +1,38 @@
+.transaction-controls {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.transaction-controls select,
+.transaction-controls button {
+  padding: 10px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.transaction-table th {
+  background: #1e3a8a;
+  color: white;
+}
+
+.credit {
+  color: green;
+  font-weight: bold;
+}
+
+.debit {
+  color: red;
+  font-weight: bold;
+}
